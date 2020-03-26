@@ -16,7 +16,7 @@ class CustomInputPrice extends Component {
             unshowPricePrompt();
         }
         
-        if (!value.length) {
+        if (value.length) {
             unshowPricePrompt();
         }
     };

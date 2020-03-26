@@ -20,6 +20,7 @@
     border: none;
     cursor: pointer;
     transition: all 0.4s;
+    border-radius: 0;
 }
 .form .adding-form__submit:hover {
     background-color: #4F9224;
@@ -27,8 +28,9 @@
 
 .form .adding-form__submit:disabled {
     cursor: auto;
-    color: lightgray;
+    color: black;
     background-color: lightslategray;
+    border-radius: 0;
 }
 
 .form .adding-form__submit:disabled:hover {
