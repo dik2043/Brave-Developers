@@ -1,0 +1,126 @@
+.form__wrapper {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 90px auto 0 auto;
+    padding: 0 10px;
+}
+
+.form__home-btn {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+    padding: 0;
+    border: 0;
+    
+    background: url("../../images/home.png") 50% 50% no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.form__home-btn:hover {
+    opacity: 0.8;
+}
+.form__home-btn:active {
+    opacity: 1;
+    outline: none;
+}
+.form__home-btn:focus {
+    outline: none;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    margin-top: 15px;
+}
+
+.form input {
+    max-width: 215px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /*padding: 0 30%;*/
+    
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #052D42;
+    transition: all 0.3s;
+}
+
+.form input:focus {
+    outline: none;
+    color: #75C441;
+    border-bottom: 1px solid #75C441;
+}
+
+.form .form__input-price {
+    /*padding: 0 calc((100% - 40px) / 2);*/
+}
+
+.form__input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+.form__prompt-span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    bottom: -10px;
+    /*left: 110%;*/
+    
+    color: #75C441;
+}
+
+.form__wrapper .item__btn {
+    margin-top: 70px;
+}
+
+.answer {
+    position: absolute;
+    top: 420px;
+    
+    width: 60%;
+    height: 130px;
+    margin-top: 20px;
+    
+    text-align: center;
+}
+
+.success {
+    background: url("../../images/happy.png") 50% 100% no-repeat;
+    background-size: 50px;
+}
+
+.failure {
+    background: url("../../images/sad.png") 50% 100% no-repeat;
+    background-size: 50px;
+}
+
+
+@media (max-width: 380px) {
+    .form__prompt-span {
+        font-size: 12px;
+    }
+}
